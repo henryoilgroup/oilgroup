@@ -1,0 +1,32 @@
+array (
+  'api_type' => 'carInfo',
+  'seq_no' => '1121001',
+  'plate' => '0611L9',
+  'plate_color' => 'wb_bf',
+  'brand' => 'BMW',
+  'color' => 'red',
+  'station' => 'D4262',
+  'island' => '01',
+  'position' => '02',
+  'time' => '20221121-143355',
+  'ip' => '127.0.0.1',
+)
+array (
+  'api_type' => 'carInfo',
+  'seq_no' => '1121001',
+  'plate' => '0611L9',
+  'plate_color' => 'wb_bf',
+  'brand' => 'BMW',
+  'color' => 'red',
+  'station' => 'D4262',
+  'island' => '01',
+  'position' => '02',
+  'time' => '20221121-143355',
+  'ip' => '127.0.0.1',
+)
+'{"api_type":"carInfo","seq_no":"1121001","plate":"0611L9","plate_color":"wb_bf","brand":"BMW","color":"red","station":"D4262","island":"01","position":"02","time":"20221121-143355","ip":"127.0.0.1"}'
+'{"api_type":"carInfo","seq_no":"1121001","plate":"0611L9","plate_color":"wb_bf","brand":"BMW","color":"red","station":"D4262","island":"01","position":"02","time":"20221121-143355","ip":"127.0.0.1"}'
+'{"api_type":"carInfo","seq_no":"1121001","plate":"0611L9","plate_color":"wb_bf","brand":"BMW","color":"red","station":"D4262","island":"01","position":"02","time":"20221121-143355","ip":"127.0.0.1"}'
+'{"api_type":"carInfo","seq_no":"1121001","plate":"0611L9","plate_color":"wb_bf","brand":"BMW","color":"red","station":"D4262","island":"01","position":"02","time":"20221121-143355","ip":"127.0.0.1"}'
+'{"api_type":"carInfo","seq_no":"1121001","plate":"0611L9","plate_color":"wb_bf","brand":"BMW","color":"red","station":"D4262","island":"01","position":"02","time":"20221121-143355","ip":"127.0.0.1"}'
+'{"api_type":"carInfo","seq_no":"1121001","plate":"0611L9","plate_color":"wb_bf","brand":"BMW","color":"red","station":"D4262","island":"01","position":"02","time":"20221121-143355","ip":"127.0.0.1"},'

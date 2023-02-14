@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../js/jquery-3.5.1.js"></script>
+</head>
+<body>
+    
+
+
+    <script>
+        save_car_no_img();
+function save_car_no_img(car_no, island, seq, car_img, time){
+    let msg_s = {'api_type': 'carInfo', 'seq_no': '2_113', 'plate': 'BBU-9231', 'plate_color': 'wb_bf', 'brand': 'Toyota', 'color': 'blue', 'station': 'D2386', 'island': '2', 'position': '3', 'time': '20230110-162119', 'photo_link': '/deeplook_media/engine/lpr_cpc/2-3_20230110-162119.jpg'};
+    console.log(msg_s);
+
+    $.ajax({
+        method: "POST",
+        url: "http://testgiftshopgw.systex.com/OilGroupAPI/api/Identify/",
+        data: msg_s,
+        dataType: "json",
+        timeout: 10000,
+        success: function (response) {
+            console.log(response)
+        },
+        error: function (exception) {
+            console.log("發生錯誤: " + exception.status);
+        }
+    });  
+}
+    </script>
+</body>
+</html>

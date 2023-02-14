@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.5.1.js"></script>
+</head>
+<body>
+    
+
+    <script>
+        function now_time() {
+            var today_test = new Date();
+            var MM = today_test.getMonth() + 1; // getMonth() is zero-based
+            var dd = today_test.getDate();
+            var yyyy = today_test.getFullYear();
+            var hh = today_test.getHours();
+            var mm = today_test.getMinutes();
+            var ss = today_test.getSeconds();
+
+            if (MM <= 9) {
+                MM = "0" + MM
+            }
+            if (dd <= 9) {
+                dd = "0" + dd
+            }
+            if (hh <= 9) {
+                hh = "0" + hh
+            }
+            if (mm <= 9) {
+                mm = "0" + mm
+            }
+            if (ss <= 9) {
+                ss = "0" + ss
+            }
+
+            return yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss
+        }
+
+        let car_no = 'ADR3139';
+        let island = '2';
+        let seq = '3';
+        let oil_type = '95';
+        insert_cam_car(car_no, island, seq, oil_type)
+
+        function insert_cam_car(car_no, island, seq, oil_type){
+            let modify_time = now_time();
+            if (island <= 9) {
+                island = "0" + island
+            }
+            if (seq <= 9) {
+                seq = "0" + seq
+            }
+
+            if(oil_type == '92'){
+                oil_type = '113F 12092005';
+
+            }else if(oil_type =='95'){
+                oil_type = '113F 12095001';
+
+            }else if(oil_type =='98'){
+                oil_type = '113F 12098008';
+
+            }else if(oil_type =='0' || oil_type =='00'){
+                oil_type = '113F 51001007';
+
+            }
+
+            $.ajax({
+                method: "GET",
+                url: "http://127.0.0.1/FR%e5%ae%a2%e9%a1%af/%e7%89%88%e6%9c%ac%e6%8e%a7%e5%88%b6/php%e7%89%88%e6%9c%ac/php_storage.php",
+                data: {
+                    'car_no':car_no,
+                    'island':island,
+                    'islandface':seq,
+                    'oil_type':oil_type,
+                    'modify_time':modify_time,
+                    'category':'3S',
+                },
+                dataType: "text",
+                timeout: 1000,
+                success: function (response) {
+                    console.log(response)
+                },
+                error: function (exception) {
+                    console.log("發生錯誤: " + exception.status);
+                }
+            });    
+        }
+    </script>
+</body>
+</html>
