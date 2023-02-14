@@ -3,7 +3,7 @@
 
     $url = "http://testgiftshopgw.systex.com/OilGroupAPI/api/Identify/";
     $data = array( 
-            'api_type' => '', 
+            'api_type' => 'carinfo', 
             'seq_no' => '', 
             'plate' => 'ADR3139', 
             'plate_color' => 'wb_bf', 
