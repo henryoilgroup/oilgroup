@@ -20,5 +20,6 @@
     //$path = '儲存路徑/檔名', $type = '副檔名', $array = '要存的資訊'
     require '../function/api_post.php';
     api_post($url, $data);
+	$data
 
 ?>
