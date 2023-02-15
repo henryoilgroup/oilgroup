@@ -31,7 +31,7 @@ if($category =='finereport'){
 
     require './function/log.php';
     $type = 'json';
-    $path = './island/api/tran_car/'.$today.'.json';
+    $path = '../island/api/tran_car/'.$today;
     $tran_car_log = Array (
         "island" => $island,
         "gun_no" => $gun_no,
